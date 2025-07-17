@@ -1,0 +1,66 @@
+# === Terraform ===
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash/
+.terraform.lock.hcl
+*.backup
+*.tfvars
+
+# === Ansible ===
+*.retry
+*.log
+host_vars/
+group_vars/
+inventory/*.ini
+*.vault
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+venv/
+.env.*
+*.sqlite3
+
+# === Docker ===
+*.tar
+*.img
+*.container
+
+# === VSCode / IDEs ===
+.vscode/
+.idea/
+*.swp
+
+# === Kubernetes / Helm ===
+charts/
+*.tgz
+*.lock
+
+# === System ===
+.DS_Store
+Thumbs.db
+
+# === GitHub Actions artifacts ===
+*.log
+*.out
+
+# === Secrets (Don't ever commit!) ===
+secrets.*
+*.key
+*.pem
+*.crt
+*.enc
+.envrc
+
+# === Logs ===
+*.log
+
+# === Coverage / Testing ===
+.coverage
+coverage.xml
+htmlcov/
+pytest_cache/
